@@ -8,6 +8,7 @@ const PORT = process.env.PORT || 3000;
 
 // Connect to mongodb
 connectDB();
+console.log("Server starting up");
 
 // Middleware to parse json
 app.use(express.json());
