@@ -15,7 +15,7 @@ app.use(express.json());
 
 // Routes
 const geoRoutes = require("./routes/geoRoutes");
-app.use("./api/geo-data", geoRoutes);
+app.use("/api/geo-data", geoRoutes);
 // Start server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
